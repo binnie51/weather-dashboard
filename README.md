@@ -12,10 +12,7 @@ Additional 5 cards will also appear below the current forecast date, enabling us
 
 All the search history will be saved below the input text box and the forecast can be viewed again.
 ## URL
-Deployed: 
-
-## Demo
-![demo video](./demo/weather-demo.gif)
+Deployed: https://binnie51.github.io/weather-dashboard/
 
 ## Screenshot
 ![dashboard-final-product](./screenshot/weather-1.PNG)
