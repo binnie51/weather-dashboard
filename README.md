@@ -15,16 +15,10 @@ All the search history will be saved below the input text box and the forecast c
 Deployed: 
 
 ## Demo
+![demo video](./demo/weather-demo.gif)
 
-## Screenshots
-
-## User Story
-
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+## Screenshot
+![dashboard-final-product](./screenshot/weather-1.PNG)
 
 ## Acceptance Criteria
 

@@ -1,14 +1,30 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
-    /* background-color: black; */
+    background-color: #15232e;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 60px;
     color:aliceblue;
     letter-spacing: 1px;
 }
 
-h4 {
+h2 {
+    color: #FFA400;
+    font-weight: bold;
+}
+h3, h4 {
     color:aliceblue;
+}
+
+p {
+    color: aliceblue;
+}
+
+.navbar {
+    height: 100px;
+}
+
+#weatherContent {
+    display: none;
 }
