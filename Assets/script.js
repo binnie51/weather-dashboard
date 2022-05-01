@@ -127,7 +127,8 @@ $("#searchBtn").on("click", function(event){
     console.log(searchHistoryList);
 });
 
-$(document).on("click", ".list-group-item", function() {
+$(document).on("click", ".list-group-item", function(event) {
+    event.preventDefault();
     var cityList = $(this).text();
     
     currentWeather(cityList);
