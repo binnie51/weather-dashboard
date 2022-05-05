@@ -115,7 +115,7 @@ $("#searchBtn").on("click", function(event){
     currentWeather(city);
     if(!searchHistoryList.includes(city)) {
         searchHistoryList.push(city);
-        var citySearched = `<li class="list-group-item">${city}</li>`;
+        var citySearched = `<li class="list-group-item m-2">${city}</li>`;
         
         $("#searchHistory").append(citySearched);
 

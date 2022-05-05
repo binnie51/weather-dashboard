@@ -42,5 +42,4 @@ THEN I am again presented with current and future conditions for that city
 ```
 
 ## License
-Copyright (c) Vincent Tjia. All rights reserved.
-License under MIT.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
