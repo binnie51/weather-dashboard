@@ -133,6 +133,7 @@ $("#clearBtn").on("click", function() {
     $("#searchHistory").html("");
 })
 
+// enable search history to be clicked 
 $(document).on("click", ".list-group-item", function(event) {
     var cityList = $(event.target).text();
     currentWeather(cityList);
@@ -141,15 +142,15 @@ $(document).on("click", ".list-group-item", function(event) {
 // Parse my data from localStorage to display search history
 $(document).ready(function() {
     var searchArray = JSON.parse(localStorage.getItem("city"));
-    
+    $("#searchHistory").html();
     if (searchArray !== null) {
-        // searchHistoryList = searchArray;
-        // for(let i = 0; i < searchHistoryList.length; i++) {
-        //     var city = $("#inputCity").val().trim();
-        //     var citySearched = `<li class="list-group-item">${city}</li>`;
+        searchHistoryList = searchArray;
+        for(let i = 0; i < searchHistoryList.length; i++) {
+            var city = searchHistoryList[i];
+            var citySearched = `<li class="list-group-item m-2">${city}</li>`;
         
-        //     $("#searchHistory").append(citySearched);
-        // }
+            $("#searchHistory").append(citySearched);
+        }
         var lastSearchIndex = searchArray.length - 1;
         var lastSearchCity = searchArray[lastSearchIndex];
 
