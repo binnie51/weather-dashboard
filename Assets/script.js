@@ -126,8 +126,11 @@ $("#searchBtn").on("click", function(event){
     console.log(searchHistoryList);
 });
 
+// clear list button
 $("#clearBtn").on("click", function() {
-    searchHistoryList = [];
+    searchHistoryList = []
+    localStorage.removeItem("city");
+    $("#searchHistory").html("");
 })
 
 $(document).on("click", ".list-group-item", function(event) {
@@ -138,7 +141,7 @@ $(document).on("click", ".list-group-item", function(event) {
 // parse my data from localStorage to display search history
 $(document).ready(function() {
     var searchArray = JSON.parse(localStorage.getItem("city"));
-
+    
     if (searchArray !== null) {
         // searchHistoryList = searchArray;
         // for(let i = 0; i < searchHistoryList.length; i++) {
