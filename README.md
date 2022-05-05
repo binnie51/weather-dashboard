@@ -12,9 +12,9 @@ A simple dashboasrd displaying the current weather of a city user(s) have input.
 ## How Does It Function?
 User(s) is to enter a valid name of specific city to check on today's weather forecast, which will shown on the largest card that appears on the page. It'll include a specific icon that represents the current forecast, along with the predicted temperature, wind, humidity, and UV index. 
 The UV index will change into 3 colors based on the weather conditions:
-* Pastel Green = favorable
-* Pastel Yellow-Orange = moderate
-* Pastel Red = severe
+* ![#C1E1C1](https://via.placeholder.com/15/C1E1C1/000000?text=+) `#C1E1C1` Pastel Green = favorable
+* ![#E6CE8D](https://via.placeholder.com/15/E6CE8D/000000?text=+) `#E6CE8D` Pastel Yellow-Orange = moderate
+* ![#FF6961](https://via.placeholder.com/15/FF6961/000000?text=+) `#FF6961` Pastel Red = severe
 
 Additional 5 cards will also appear below the current forecast date, enabling user(s) to view the city's next 5-day forcast.  
 

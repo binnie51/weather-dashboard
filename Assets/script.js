@@ -121,14 +121,14 @@ $("#searchBtn").on("click", function(event){
 
     };
 
-    // save entries of initially an empty array to the localStorage
+    // save entries of initially an empty array of search history to the localStorage
     localStorage.setItem("city", JSON.stringify(searchHistoryList));
     console.log(searchHistoryList);
 });
 
-// clear list button
+// Clear list button to clear search history on the browser and local storage
 $("#clearBtn").on("click", function() {
-    searchHistoryList = []
+    searchHistoryList = [];
     localStorage.removeItem("city");
     $("#searchHistory").html("");
 })
@@ -138,13 +138,14 @@ $(document).on("click", ".list-group-item", function(event) {
     currentWeather(cityList);
 });
 
-// parse my data from localStorage to display search history
+// Parse my data from localStorage to display search history
 $(document).ready(function() {
     var searchArray = JSON.parse(localStorage.getItem("city"));
     
     if (searchArray !== null) {
         // searchHistoryList = searchArray;
         // for(let i = 0; i < searchHistoryList.length; i++) {
+        //     var city = $("#inputCity").val().trim();
         //     var citySearched = `<li class="list-group-item">${city}</li>`;
         
         //     $("#searchHistory").append(citySearched);
