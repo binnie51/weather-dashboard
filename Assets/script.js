@@ -115,8 +115,7 @@ $("#searchBtn").on("click", function(event){
     currentWeather(city);
     if(!searchHistoryList.includes(city)) {
         searchHistoryList.push(city);
-        var citySearched = `
-            <li class="list-group-item">${city}</li>`;
+        var citySearched = `<li class="list-group-item">${city}</li>`;
         
         $("#searchHistory").append(citySearched);
 
@@ -127,8 +126,7 @@ $("#searchBtn").on("click", function(event){
     console.log(searchHistoryList);
 });
 
-$(document).on("click", ".list-group-item", function(event) {
-    event.preventDefault();
+$(document).on("click", ".list-group-item", function() {
     var cityList = $(this).text();
     
     currentWeather(cityList);
@@ -139,6 +137,12 @@ $(document).ready(function() {
     var searchArray = JSON.parse(localStorage.getItem("city"));
 
     if (searchArray !== null) {
+        searchHistoryList = searchArray;
+        for(let i = 0; i < searchHistoryList.length; i++) {
+            var citySearched = `<li class="list-group-item">${city}</li>`;
+        
+            $("#searchHistory").append(citySearched);
+        }
         var lastSearchIndex = searchArray.length - 1;
         var lastSearchCity = searchArray[lastSearchIndex];
 

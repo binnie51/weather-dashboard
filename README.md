@@ -43,4 +43,4 @@ THEN I am again presented with current and future conditions for that city
 
 ## License
 Copyright (c) Vincent Tjia. All rights reserved.
-License under MIT
+License under MIT.
