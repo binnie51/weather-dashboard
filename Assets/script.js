@@ -142,7 +142,7 @@ $(document).on("click", ".list-group-item", function(event) {
 // Parse my data from localStorage to display search history
 $(document).ready(function() {
     var searchArray = JSON.parse(localStorage.getItem("city"));
-    $("#searchHistory").html();
+
     if (searchArray !== null) {
         searchHistoryList = searchArray;
         for(let i = 0; i < searchHistoryList.length; i++) {
