@@ -23,7 +23,7 @@ All the search history will be saved below the input text box and the forecast c
 Deployed: https://binnie51.github.io/weather-dashboard/
 
 ## Screenshot
-![dashboard-final-product](./screenshot/weather-1.PNG)
+![dashboard-final-product](./screenshot/weather_dash.PNG)
 
 ## Acceptance Criteria
 
@@ -42,4 +42,4 @@ THEN I am again presented with current and future conditions for that city
 ```
 
 ## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
